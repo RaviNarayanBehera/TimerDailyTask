@@ -12,6 +12,7 @@ class _FlutterButtonState extends State<FlutterButton> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         centerTitle: true,
         title: Text('Actions',style: TextStyle(color: Colors.black,fontSize: 35,fontWeight: FontWeight.w500),),
       ),
