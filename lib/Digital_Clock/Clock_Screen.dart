@@ -26,19 +26,19 @@ class _ClockScreenState extends State<ClockScreen> {
               image: AssetImage('assets/images/Hit_man.jpg'), fit: BoxFit.fill),
         ),
         child: Transform.translate(
-          offset: Offset(10,12),
+            offset: Offset(10,12),
             child: Column(
               children: [
                 Text(
-                          '${dateTime.hour}:${dateTime.minute}',
-                          style: TextStyle(
-                  color: Colors.white70, fontSize: 45, fontWeight: FontWeight.w500),
-                        ),
+                  '${dateTime.hour}:${dateTime.minute}',
+                  style: TextStyle(
+                      color: Colors.white70, fontSize: 45, fontWeight: FontWeight.w500),
+                ),
                 Text(
-                          '${dateTime.day}-${dateTime.month} -${dateTime.year}',
-                          style: TextStyle(
-                  color: Colors.white70, fontSize: 15, fontWeight: FontWeight.w500),
-                        ),
+                  '${dateTime.day}-${dateTime.month} -${dateTime.year}',
+                  style: TextStyle(
+                      color: Colors.white70, fontSize: 15, fontWeight: FontWeight.w500),
+                ),
               ],
             )),
       ),

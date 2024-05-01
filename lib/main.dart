@@ -1,6 +1,5 @@
-import 'package:clock_app/Flutter_Button/flutter_buttons.dart';
 import 'package:flutter/material.dart';
-import 'Clock_App/digital_clock.dart';
+import 'Digital_Clock/Clock_Screen.dart';
 
 void main()
 {
