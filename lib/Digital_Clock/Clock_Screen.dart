@@ -26,7 +26,7 @@ class _ClockScreenState extends State<ClockScreen> {
               image: AssetImage('assets/images/Hit_man.jpg'), fit: BoxFit.fill),
         ),
         child: Transform.translate(
-            offset: Offset(10,12),
+            offset: Offset(70,30),
             child: Column(
               children: [
                 Text(
