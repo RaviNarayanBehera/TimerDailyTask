@@ -91,46 +91,48 @@ class _ClockScreenState extends State<ClockScreen> {
         );
       },
     );
-    return Scaffold(
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/images/Hit_man.jpg'), fit: BoxFit.fill),
-        ),
-        child: Transform.translate(
-          offset: Offset(70, 30),
-          child: Column(
-            children: [
-              Text.rich(
-                TextSpan(
-                  children: [
-                    TextSpan(
-                      text: '${dateTime.hour % 12}:${dateTime.minute}',
-                      style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 45,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    TextSpan(
-                      text: '  $amPm',
-                      style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ],
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/1.jpg'),fit: BoxFit.fill),
+          ),
+          child: Transform.translate(
+            offset: Offset(20,290),
+            child: Column(
+              children: [
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: '${dateTime.hour % 12}:${dateTime.minute}:${dateTime.second}',
+                        style: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 45,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      TextSpan(
+                        text: '  $amPm',
+                        style: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              Text(
-                '$day, $month ${dateTime.day}',
-                style: const TextStyle(
-                    color: Colors.white70,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500),
-              ),
-            ],
+                Text(
+                  '$day, $month ${dateTime.day}',
+                  style: const TextStyle(
+                      color: Colors.white70,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500),
+                ),
+              ],
+            ),
           ),
         ),
       ),
