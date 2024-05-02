@@ -1,4 +1,24 @@
 <h1 align = "center">
+ Flutter Button's
+</h1>
+
+
+<h1 align = "center">
+  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/21de20a3-ec80-49f3-b809-66baf74db92a" height=65%  width=22%>
+</h1>
+
+#
+<h1 align = "center">
+ Digital Clock
+</h1>
+
+
+<h1 align = "center">
+  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/f65b1fdb-d55a-448a-be1a-f78af4eeb35a" height=65%  width=22%>
+</h1>
+
+#
+<h1 align = "center">
 Asynchronous Programming
 </h1>
 <br><br>
@@ -120,10 +140,4 @@ class _PeriodicTimerWidgetState extends State<PeriodicTimerWidget> {
   }
 }
 ```
-<h1 align = "center">
- Flutter Button's
-</h1>
 
-<h1 align = "center">
-  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/21de20a3-ec80-49f3-b809-66baf74db92a" height=65%  width=22%>
-</h1>
