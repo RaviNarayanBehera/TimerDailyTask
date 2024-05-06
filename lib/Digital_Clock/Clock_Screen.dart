@@ -101,7 +101,7 @@ class _ClockScreenState extends State<ClockScreen> {
                 image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
           ),
           child: Transform.translate(
-            offset: Offset(20, 230),
+            offset: Offset(18, 230),
             child: Column(
               children: [
                 Text.rich(
@@ -109,7 +109,7 @@ class _ClockScreenState extends State<ClockScreen> {
                     children: [
                       TextSpan(
                         text:
-                            '${dateTime.hour % 12}:${dateTime.minute}:${dateTime.second}',
+                            '${dateTime.hour}:${dateTime.minute}:${dateTime.second}',
                         style: const TextStyle(
                             color: Colors.white70,
                             fontSize: 45,
@@ -131,71 +131,6 @@ class _ClockScreenState extends State<ClockScreen> {
                       color: Colors.white70,
                       fontSize: 15,
                       fontWeight: FontWeight.w500),
-                ),
-                SizedBox(
-                  height: 35,
-                ),
-                Container(
-                  height: 220,
-                  width: 220,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.white, width: 5),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      ...List.generate(
-                        60,
-                        (index) => Transform.rotate(
-                          angle: ((index + 1) * 6 * pi) / 180,
-                          child: ((index + 1) % 5 == 0)
-                              ? const VerticalDivider(
-                                  thickness: 3,
-                                  color: Colors.red,
-                                  indent: 0,
-                                  endIndent: 190,
-                                )
-                              : const VerticalDivider(
-                                  thickness: 2,
-                                  color: Colors.lightBlueAccent,
-                                  indent: 0,
-                                  endIndent: 200,
-                                ),
-                        ),
-                      ),
-                      Transform.rotate(
-                        angle: (dateTime.hour % 12 + dateTime.minute / 60) *
-                            30 *
-                            pi /
-                            180,
-                        child: VerticalDivider(
-                          thickness: 5,
-                          color: Colors.red,
-                          indent: 50,
-                          endIndent: 90,
-                        ),
-                      ),
-                      Transform.rotate(
-                        angle: (dateTime.second * 6 * pi) / 180,
-                        child: const VerticalDivider(
-                          thickness: 2,
-                          color: Colors.white,
-                          indent: 25,
-                          endIndent: 90,
-                        ),
-                      ),
-                      Transform.rotate(
-                        angle: (dateTime.minute * 6 * pi) / 180,
-                        child: VerticalDivider(
-                          thickness: 3.5,
-                          color: Colors.lightBlueAccent,
-                          indent: 35,
-                          endIndent: 90,
-                        ),
-                      ),
-                    ],
-                  ),
                 ),
               ],
             ),

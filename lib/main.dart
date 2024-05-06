@@ -1,3 +1,5 @@
+import 'package:clock_app/Analog_clock/analog_clock.dart';
+import 'package:clock_app/Strpwatch_clock/strapwatch.dart';
 import 'package:flutter/material.dart';
 import 'Digital_Clock/Clock_Screen.dart';
 
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         // '/':(context)=>(const FlutterButton()),
-        '/':(context)=>(const ClockScreen()),
+        '/':(context)=>(const StrapWatch()),
       },
     );
   }
