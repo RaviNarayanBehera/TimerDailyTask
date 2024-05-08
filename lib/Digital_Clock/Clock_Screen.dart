@@ -1,6 +1,8 @@
 import 'dart:math';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:async';
 import '../Global.dart';
 
@@ -91,50 +93,115 @@ class _ClockScreenState extends State<ClockScreen> {
         );
       },
     );
-    return SafeArea(
-      child: Scaffold(
-        body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
-          ),
-          child: Transform.translate(
-            offset: Offset(18, 230),
-            child: Column(
-              children: [
-                Text.rich(
-                  TextSpan(
-                    children: [
-                      TextSpan(
-                        text:
-                            '${dateTime.hour}:${dateTime.minute}:${dateTime.second}',
-                        style: const TextStyle(
-                            color: Colors.white70,
-                            fontSize: 45,
-                            fontWeight: FontWeight.w500),
-                      ),
-                      TextSpan(
-                        text: '  $amPm',
-                        style: const TextStyle(
-                            color: Colors.white70,
-                            fontSize: 15,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ],
-                  ),
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.black,
+        height: 80,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed('/');
+              },
+              child: Container(
+                height: 50,
+                width: 120,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(25),
+                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                alignment: Alignment.center,
+                child: Text(
+                  'Digital',
+                  style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
-                Text(
-                  '$day, $month ${dateTime.day}',
-                  style: const TextStyle(
-                      color: Colors.white70,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w500),
-                ),
-              ],
+              ),
             ),
-          ),
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed('/analog');
+              },
+              child: Container(
+                height: 50,
+                width: 120,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(25),
+                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                alignment: Alignment.center,
+                child: Text(
+                  'Analog',
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed('/strap');
+              },
+              child: Container(
+                height: 50,
+                width: 120,
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(25),
+                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                alignment: Alignment.center,
+                child: Text(
+                  'StrapWatch',
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
+        ),
+        child: Row(
+          children: [
+            Transform.translate(
+              offset: Offset(125, 270),
+              child: Column(
+                children: [
+                  Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text:
+                              '${dateTime.hour}:${dateTime.minute}:${dateTime.second}',
+                          style: const TextStyle(
+                              color: Colors.white70,
+                              fontSize: 45,
+                              fontWeight: FontWeight.w500),
+                        ),
+                        TextSpan(
+                          text: '  $amPm',
+                          style: const TextStyle(
+                              color: Colors.white70,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    '$day, $month ${dateTime.day}',
+                    style: const TextStyle(
+                        color: Colors.white70,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

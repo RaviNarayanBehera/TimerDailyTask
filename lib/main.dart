@@ -16,8 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        // '/':(context)=>(const FlutterButton()),
-        '/':(context)=>(const StrapWatch()),
+        '/':(context)=>(const ClockScreen()),
+        '/analog':(context)=>(const AnalogClock()),
+        '/strap':(context)=>(const StrapWatch()),
       },
     );
   }
