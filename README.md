@@ -2,19 +2,8 @@
  Flutter Button's
 </h1>
 
-
 <h1 align = "center">
   <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/21de20a3-ec80-49f3-b809-66baf74db92a" height=65%  width=22%>
-</h1>
-
-#
-<h1 align = "center">
- Digital Clock
-</h1>
-
-
-<h1 align = "center">
-  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/f65b1fdb-d55a-448a-be1a-f78af4eeb35a" height=65%  width=22%>
 </h1>
 
 #
@@ -140,4 +129,57 @@ class _PeriodicTimerWidgetState extends State<PeriodicTimerWidget> {
   }
 }
 ```
+
+#
+<h1 align = "center">
+ Digital Clock
+</h1>
+
+
+<h1 align = "center">
+  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/a7ecf194-343d-4c49-b666-344f380e59c5" height=65%  width=22%>
+</h1>
+
+
+#
+<h1 align = "center">
+ Analog Clock
+</h1>
+
+
+<h1 align = "center">
+  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/4a636a1e-abed-44eb-b396-7fb01f6b0000" height=65%  width=22%>
+</h1>
+
+
+#
+<h1 align = "center">
+ Strap Watch
+</h1>
+
+
+<h1 align = "center">
+  <img src="https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/2d0b7944-ecc4-4e5d-9c28-68d23fea94f3" height=65%  width=22%>
+</h1>
+
+#
+<h1 align = "center">
+ Video
+</h1>
+
+
+
+<div align="center">
+<video src = "https://github.com/RaviNarayanBehera/TimerDailyTask/assets/148530184/459c08d7-651f-4f86-8fea-6bc1c23ddd40">
+
+
+
+
+
+
+
+
+
+
+
 
