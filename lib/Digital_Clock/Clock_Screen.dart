@@ -162,7 +162,7 @@ class _ClockScreenState extends State<ClockScreen> {
         width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
+              image: AssetImage('assets/images/clock.jpg'), fit: BoxFit.fill),
         ),
         child: Row(
           children: [

@@ -14,7 +14,7 @@ class _StrapWatchState extends State<StrapWatch> {
   @override
   Widget build(BuildContext context) {
     Timer.periodic(
-      Duration(seconds: 1),
+      const Duration(seconds: 1),
       (timer) {
         setState(
           () {
@@ -40,9 +40,9 @@ class _StrapWatchState extends State<StrapWatch> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                    boxShadow: const [BoxShadow(color: Colors.red, spreadRadius: 2)]),
                 alignment: Alignment.center,
-                child: Text(
+                child: const Text(
                   'Digital',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
@@ -58,9 +58,9 @@ class _StrapWatchState extends State<StrapWatch> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                    boxShadow: const [BoxShadow(color: Colors.red, spreadRadius: 2)]),
                 alignment: Alignment.center,
-                child: Text(
+                child: const Text(
                   'Analog',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
@@ -76,9 +76,9 @@ class _StrapWatchState extends State<StrapWatch> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: [BoxShadow(color: Colors.red, spreadRadius: 2)]),
+                    boxShadow: const [BoxShadow(color: Colors.red, spreadRadius: 2)]),
                 alignment: Alignment.center,
-                child: Text(
+                child: const Text(
                   'StrapWatch',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
@@ -92,10 +92,10 @@ class _StrapWatchState extends State<StrapWatch> {
         width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
+              image: AssetImage('assets/images/clock.jpg'), fit: BoxFit.fill),
         ),
         child: Transform.translate(
-          offset: Offset(10, 350),
+          offset: const Offset(10, 300),
           child: Column(
             children: [
               Stack(
@@ -128,7 +128,7 @@ class _StrapWatchState extends State<StrapWatch> {
                       value: ((dateTime.hour % 12 + dateTime.minute / 60) / 12),
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     height: 220,
                     width: 220,
                     child: Stack(
@@ -139,7 +139,7 @@ class _StrapWatchState extends State<StrapWatch> {
                               30 *
                               pi /
                               180,
-                          child: VerticalDivider(
+                          child: const VerticalDivider(
                             thickness: 5,
                             color: Colors.green,
                             indent: 50,

@@ -92,10 +92,10 @@ class _AnalogClockState extends State<AnalogClock> {
         width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/images/3.jpg'), fit: BoxFit.fill),
+              image: AssetImage('assets/images/clock.jpg'), fit: BoxFit.fill),
         ),
         child: Transform.translate(
-          offset: Offset(10, 350),
+          offset: Offset(7, 300),
           child: Column(
             children: [
               Container(
